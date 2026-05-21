@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://jt7sku-aspire-duneawakens-selfhosted.dev.localhost:17056;http://jt7sku-aspire-duneawakens-selfhosted.dev.localhost:15274",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_ENVIRONMENT": "Development",
+        "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL": "https://localhost:21067",
+        "ASPIRE_DASHBOARD_MCP_ENDPOINT_URL": "https://localhost:23106",
+        "ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL": "https://localhost:22105"
+      }
+    },
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://jt7sku-aspire-duneawakens-selfhosted.dev.localhost:15274",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_ENVIRONMENT": "Development",
+        "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL": "http://localhost:19008",
+        "ASPIRE_DASHBOARD_MCP_ENDPOINT_URL": "http://localhost:18184",
+        "ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL": "http://localhost:20163"
+      }
+    }
+  }
+}

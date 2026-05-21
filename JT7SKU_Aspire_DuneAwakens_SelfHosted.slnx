@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="JT7SKU.Aspire.SteamIntegration/JT7SKU.Aspire.SteamIntegration.csproj" Id="5cbc8fd1-584a-4543-bb42-c663955ea38c" />
+  <Project Path="JT7SKU_Aspire_DuneAwakens_SelfHosted.AppHost/JT7SKU_Aspire_DuneAwakens_SelfHosted.AppHost.csproj" />
+  <Project Path="JT7SKU_Aspire_DuneAwakens_SelfHosted.ServiceDefaults/JT7SKU_Aspire_DuneAwakens_SelfHosted.ServiceDefaults.csproj" />
+  <Project Path="StreamKit/J77SKU.SteamConnector.csproj" Id="366f2dfa-6662-478f-a084-b086c78a996a" />
+</Solution>
