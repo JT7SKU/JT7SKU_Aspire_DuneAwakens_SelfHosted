@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace JT7SKU.Aspire.SteamIntegration
+namespace JT7SKU.Aspire.Integrations.Steam
 {
     public static class SteamResourceBuilderExtensions
     {
