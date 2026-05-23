@@ -1,0 +1,6 @@
+@JT7SKU.Palvelut.SteamService_HostAddress = http://localhost:5001
+
+GET {{JT7SKU.Palvelut.SteamService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

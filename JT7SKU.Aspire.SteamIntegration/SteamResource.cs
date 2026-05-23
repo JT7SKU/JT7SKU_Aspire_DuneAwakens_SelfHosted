@@ -2,7 +2,7 @@
 
 namespace JT7SKU.Aspire.Integrations.Steam
 {
-    public class SteamReasource([ResourceName] string nimi) : ContainerResource(nimi), IResourceWithConnectionString
+    public class SteamResource([ResourceName] string nimi) : ContainerResource(nimi), IResourceWithConnectionString
     {
         public ReferenceExpression ConnectionStringExpression => throw new NotImplementedException();
     }

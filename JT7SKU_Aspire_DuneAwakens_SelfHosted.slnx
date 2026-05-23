@@ -1,10 +1,13 @@
 <Solution>
   <Folder Name="/DyyniHerääminen/">
+    <Project Path="DyyniHeraaminenHallinta/DyyniHeraaminenHallinta.Client/DyyniHeraaminenHallinta.Asiakas.csproj" Id="3ef8c980-b13d-4b40-91dc-929a5e777f00" />
+    <Project Path="DyyniHeraaminenHallinta/DyyniHeraaminenHallinta/DyyniHeraaminenHallinta.csproj" Id="d328af12-51f1-4179-9537-8226d69e96aa" />
     <Project Path="JT7SKU_Aspire_DuneAwakens_SelfHosted.AppHost/JT7SKU_Aspire_DuneAwakens_SelfHosted.AppHost.csproj" />
     <Project Path="JT7SKU_Aspire_DuneAwakens_SelfHosted.ServiceDefaults/JT7SKU_Aspire_DuneAwakens_SelfHosted.ServiceDefaults.csproj" />
   </Folder>
   <Folder Name="/Steam/">
     <Project Path="JT7SKU.Aspire.SteamIntegration/JT7SKU.Aspire.SteamIntegration.csproj" Id="5cbc8fd1-584a-4543-bb42-c663955ea38c" />
+    <Project Path="JT7SKU.Palvelut.SteamService/JT7SKU.Palvelut.SteamService.csproj" />
     <Project Path="JT7SKU.Steam/JT7SKU.Steam.Client/JT7SKU.Steam.Asiakas.csproj" Id="4ae6bd91-c196-445a-9821-d5497221184c" />
     <Project Path="JT7SKU.Steam/JT7SKU.Steam/JT7SKU.Steam.csproj" Id="3910cf7b-2f04-4a62-a5f4-42df39ad3683" />
     <Project Path="StreamKit/J77SKU.SteamConnector.csproj" Id="366f2dfa-6662-478f-a084-b086c78a996a" />
