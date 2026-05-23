@@ -2,7 +2,7 @@
 
 namespace StreamKit
 {
-    public sealed class SteamKitSettings
+    public sealed class SteamKitAsiakasSettings
     {
         internal const string OletusConfigOsioNimi = "SteamKit:Asiakas";
         public Uri? Endpoint { get; set; }

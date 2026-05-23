@@ -10,6 +10,6 @@
     <Project Path="JT7SKU.Palvelut.SteamService/JT7SKU.Palvelut.SteamService.csproj" />
     <Project Path="JT7SKU.Steam/JT7SKU.Steam.Client/JT7SKU.Steam.Asiakas.csproj" Id="4ae6bd91-c196-445a-9821-d5497221184c" />
     <Project Path="JT7SKU.Steam/JT7SKU.Steam/JT7SKU.Steam.csproj" Id="3910cf7b-2f04-4a62-a5f4-42df39ad3683" />
-    <Project Path="StreamKit/J77SKU.SteamConnector.csproj" Id="366f2dfa-6662-478f-a084-b086c78a996a" />
+    <Project Path="StreamKit/J77SKU.SteamKitAsiakas.csproj" Id="366f2dfa-6662-478f-a084-b086c78a996a" />
   </Folder>
 </Solution>
