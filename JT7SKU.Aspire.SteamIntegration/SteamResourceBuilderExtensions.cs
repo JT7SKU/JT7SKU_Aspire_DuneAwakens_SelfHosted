@@ -8,7 +8,8 @@ namespace JT7SKU.Aspire.Integrations.Steam
 {
     public static class SteamResourceBuilderExtensions
     {
-        public static IResourceBuilder<SteamReasource> AddSteamDB(this IDistributedApplicationBuilder rakentaja, [ResourceName] string nimi, int? port = null)
+        public static IResourceBuilder<SteamReasource> AddSteamDB(
+            this IDistributedApplicationBuilder rakentaja, [ResourceName] string nimi, int? port = null)
         {
             var resourssi = new SteamReasource(nimi);
 
