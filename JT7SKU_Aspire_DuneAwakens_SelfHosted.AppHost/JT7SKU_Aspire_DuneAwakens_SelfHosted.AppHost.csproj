@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DyyniHeraaminenHallinta\DyyniHeraaminenHallinta\DyyniHeraaminenHallinta.csproj" />
-    <ProjectReference Include="..\JT7SKU.Aspire.SteamIntegration\JT7SKU.Aspire.SteamIntegration.csproj" />
+    <ProjectReference Include="..\JT7SKU.Aspire.SteamIntegration\JT7SKU.Aspire.SteamIntegration.csproj" IsAspireProjectResource="false"/>
     <ProjectReference Include="..\JT7SKU.Palvelut.SteamService\JT7SKU.Palvelut.SteamService.csproj" />
   </ItemGroup>
 

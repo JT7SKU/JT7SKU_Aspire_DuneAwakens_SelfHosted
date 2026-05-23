@@ -1,5 +1,7 @@
 
 
+using JT7SKU.Aspire.Integrations.Steam;
+
 var rakentaja = DistributedApplication.CreateBuilder(args);
 
 var kubenets = rakentaja.AddKubernetesEnvironment("k8s");
@@ -15,7 +17,7 @@ var pgDB = pg.AddDatabase("pgdb");
 var kayttajanimi = rakentaja.AddParameter("dune");
 var avainNaamiointi = rakentaja.AddKeycloak("an").WithPostgres(pgDB);
 // steamDB https://steamdb.info/app/4754530/
-//var stiimi = rakentaja.AddSteamDB("steamdb"); 
+var stiimi = rakentaja.AddSteamDB("steamdb");
 
 
 rakentaja.AddProject<Projects.DyyniHeraaminenHallinta>("dyyniheraaminenhallinta");
