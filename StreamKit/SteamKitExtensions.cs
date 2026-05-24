@@ -53,24 +53,24 @@ namespace J77SKU.SteamKitAsiakas
                 rakentaja.Services.AddHealthChecks().AddCheck<SteamKitTerveysTarkastus>(name: palveluAvain is null ? "SteamKit" : $"SteamKit{yhteysNimi}", failureStatus: default, tags: []);
             }
 
-            if (asetukset.DisableTracing is false)
-            {
-                rakentaja.Services.AddOpenTelemetry()
-                     .WithTracing(
-              traceBuilder => traceBuilder.AddSource(
-                 Telemetry.SteamClient.ActivitySourceName));
-            }
+            //if (asetukset.DisableTracing is false)
+            //{
+            //    rakentaja.Services.AddOpenTelemetry()
+            //         .WithTracing(
+            //  traceBuilder => traceBuilder.AddSource(
+            //     Telemetry.SteamClient.ActivitySourceName));
+            //}
 
-            if (asetukset.DisableMetrix is false)
-            {
-                // Required by MailKit to enable metrics
-                Telemetry.SmtpClient.Configure();
+            //if (asetukset.DisableMetrix is false)
+            //{
+            //    // Required by MailKit to enable metrics
+            //    Telemetry.SteamClient.Configure();
 
-                rakentaja.Services.AddOpenTelemetry()
-                    .WithMetrics(
-                        metricsBuilder => metricsBuilder.AddMeter(
-                            Telemetry.SteamClient.MeterName));
-            }
+            //    rakentaja.Services.AddOpenTelemetry()
+            //        .WithMetrics(
+            //            metricsBuilder => metricsBuilder.AddMeter(
+            //                Telemetry.SteamClient.MeterName));
+            //}
         }
     }
 }

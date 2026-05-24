@@ -1,4 +1,5 @@
 ﻿using System.Data.Common;
+using System.Net;
 
 namespace StreamKit
 {
@@ -6,6 +7,7 @@ namespace StreamKit
     {
         internal const string OletusConfigOsioNimi = "SteamKit:Asiakas";
         public Uri? Endpoint { get; set; }
+        public NetworkCredential? Tunnukset { get; set; }
         public bool DisableHealthChecks { get; set; }
         public bool DisableTracing { get; set; }
         public bool DisableMetrix { get; set; }
@@ -27,12 +29,12 @@ namespace StreamKit
             }
             else
             {
-                var builder = new DbConnectionStringBuilder
+                var rakentaja = new DbConnectionStringBuilder
                 {
                     ConnectionString = connectionString
                 };
 
-                if (builder.TryGetValue("Endpoint", out var endpoint) is false)
+                if (rakentaja.TryGetValue("Endpoint", out var endpoint) is false)
                 {
                     throw new InvalidOperationException($"""
                     The 'ConnectionStrings:<connectionName>' (or 'Endpoint' key in
@@ -49,6 +51,10 @@ namespace StreamKit
                 }
 
                 Endpoint = uri;
+                if (rakentaja.TryGetValue("Käyttäjänimi", out var kayttajanimi) && rakentaja.TryGetValue("Salasana", out var salasana))
+                {
+                    Tunnukset = new(kayttajanimi.ToString(), salasana.ToString());
+                }
             }
         }
         }
